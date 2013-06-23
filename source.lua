@@ -74,7 +74,8 @@ local service_reference = {
 local player_reference = __intern_local_nlib and {
 	player    = service_reference.Players.LocalPlayer,
 	character = service_reference.Players.LocalPlayer.Character,
-	camera    = service_reference.Workspace.CurrentCamera
+	camera    = service_reference.Workspace.CurrentCamera,
+	mouse     = service_reference.Players.LocalPlayer:GetMouse()
 } or nil
 
 local roblox_data_reference = {
